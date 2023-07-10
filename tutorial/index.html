@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="sample.com" method="post">
+      <fieldset>
+          <label for="name">Enter Name: <input id="name" type="text" required/></label>
+          <label for="email">Enter email: <input id="email" type="email" required/></label>
+          <label for="pass">Enter New Password: <input id="pass" type="password" pattern="[a-z]{6,}"  required/></label>
+      </fieldset>
+      <fieldset>
+      
+          <label for="free-account"><input type="radio" id="free-account" name="account-type"/> Free Account</label>
+          <label for="paid-account"><input type="radio" id="paid-account" name="account-type"/> Paid Account</label>
+          <label for="terms-and-conditions"><input type="checkbox" id="terms-and-conditions" name="terms-and-conditions" required> I have read the terms</label>
+      
+      </fieldset>
+      <input type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
